@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Coinwan is a secure cryptocurrency exchange that makes it easier to buy, sell, and store cryptocurrencies like BTC, ETH, USDT, SHIB, DOGE, Ada etc.">
+    <title>Exchange Bitcoin, Ethereum, Altcoins | Cryptocurrency Exchange | Bityx</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/getDataFromApi.js" async></script>
+</head>
+
+<body>
+
+    <div class="header-fixed">
+
+        <header>
+            <div class="title">
+                <svg width="101" height="37" viewBox="0 0 101 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_71_2473)">
+                        <path
+                            d="M18.1495 11.8039L23.4103 6.43886C23.5249 6.32129 23.5893 6.16221 23.5893 5.9964C23.5893 5.83058 23.5249 5.67151 23.4103 5.55394L18.1495 0.184315C18.0932 0.125107 18.0257 0.0780385 17.9512 0.0458963C17.8767 0.0137541 17.7966 -0.00280762 17.7157 -0.00280762C17.6348 -0.00280762 17.5547 0.0137541 17.4801 0.0458963C17.4056 0.0780385 17.3382 0.125107 17.2818 0.184315L0.538167 17.2799C0.193601 17.6316 3.91289e-05 18.1085 0 18.6057V35.7506C5.10049e-05 35.8743 0.0360745 35.9953 0.103518 36.0982C0.170961 36.201 0.266797 36.2812 0.378914 36.3286C0.491031 36.3759 0.614396 36.3883 0.733418 36.3642C0.85244 36.3401 0.961778 36.2805 1.04761 36.193L8.30379 28.7822C8.47604 28.6063 8.61241 28.3974 8.70504 28.1674C8.79767 27.9375 8.84472 27.6911 8.84347 27.4425L8.68172 10.9868C8.67892 10.7374 8.72509 10.49 8.81752 10.2591C8.90994 10.0282 9.04675 9.81855 9.21989 9.64244L11.755 7.05552C11.8703 6.9386 12.0263 6.87296 12.1889 6.87296C12.3515 6.87296 12.5074 6.9386 12.6227 7.05552L17.2773 11.8039C17.3353 11.8613 17.3815 11.9301 17.413 12.0061C17.4445 12.0821 17.4608 12.1638 17.4608 12.2463C17.4608 12.3288 17.4445 12.4105 17.413 12.4865C17.3815 12.5625 17.3353 12.6313 17.2773 12.6888L12.0165 18.0538C11.902 18.1711 11.8377 18.3299 11.8377 18.4955C11.8377 18.661 11.902 18.8198 12.0165 18.9371L17.2833 24.3083C17.398 24.4259 17.4623 24.585 17.4623 24.7508C17.4623 24.9166 17.398 25.0757 17.2833 25.1932L12.0165 30.5629C11.9019 30.6804 11.8375 30.8395 11.8375 31.0053C11.8375 31.1711 11.9019 31.3302 12.0165 31.4478L17.2833 36.8174C17.3397 36.8764 17.407 36.9232 17.4814 36.9552C17.5558 36.9872 17.6357 37.0037 17.7164 37.0037C17.7972 37.0037 17.8771 36.9872 17.9515 36.9552C18.0258 36.9232 18.0932 36.8764 18.1495 36.8174L29.5493 25.1932C29.6639 25.0757 29.7283 24.9166 29.7283 24.7508C29.7283 24.585 29.6639 24.4259 29.5493 24.3083L18.1495 12.6888C18.0915 12.6313 18.0453 12.5625 18.0138 12.4865C17.9823 12.4105 17.966 12.3288 17.966 12.2463C17.966 12.1638 17.9823 12.0821 18.0138 12.0061C18.0453 11.9301 18.0915 11.8613 18.1495 11.8039Z"
+                            fill="#2841e5"></path>
+                        <path
+                            d="M56.9293 12.3333L59.0457 10.175C59.109 10.1097 59.1445 10.0216 59.1445 9.92984C59.1445 9.83804 59.109 9.74995 59.0457 9.68472L56.9293 7.52638C56.8653 7.46133 56.7786 7.4248 56.6882 7.4248C56.5978 7.4248 56.5111 7.46133 56.4471 7.52638L54.3307 9.68472C54.2669 9.75002 54.2311 9.83844 54.2311 9.93061C54.2311 10.0228 54.2669 10.1112 54.3307 10.1765L56.4471 12.3348C56.5113 12.3997 56.5981 12.4359 56.6885 12.4356C56.7789 12.4354 56.8655 12.3986 56.9293 12.3333Z"
+                            fill="#2841e5"></path>
+                        <path
+                            d="M49.1652 8.75045C48.2445 8.2417 47.0805 7.97961 45.7049 7.97961H37.6263C37.5364 7.97961 37.4501 8.01595 37.3863 8.08067C37.3226 8.14538 37.2866 8.23322 37.2862 8.32495V28.9463C37.2862 29.0383 37.322 29.1265 37.3858 29.1916C37.4496 29.2566 37.5361 29.2932 37.6263 29.2932H45.8243C47.3028 29.2932 48.5741 29.0187 49.6036 28.4792C50.5672 28.0008 51.3768 27.2518 51.9373 26.3203C52.4978 25.3887 52.7858 24.3133 52.7676 23.2205C52.7873 22.1296 52.4907 21.0569 51.915 20.1372C51.3022 19.2104 50.4564 18.4686 49.466 17.9897L49.2725 17.8894L49.46 17.7784C51.1364 16.7841 51.986 15.3349 51.986 13.4618C51.9914 12.5076 51.7427 11.5698 51.2664 10.7484C50.7571 9.90002 50.0307 9.20926 49.1652 8.75045ZM41.1093 11.4962C41.1093 11.4042 41.1451 11.3159 41.2089 11.2509C41.2727 11.1858 41.3592 11.1493 41.4494 11.1493H45.2287C46.0934 11.1493 46.8009 11.379 47.333 11.8353C47.8651 12.2917 48.1402 12.9823 48.1402 13.8719C48.1402 14.7614 47.8681 15.4444 47.3315 15.8961C46.7948 16.3478 46.0934 16.5667 45.2287 16.5667H41.4494C41.3592 16.5667 41.2727 16.5302 41.2089 16.4651C41.1451 16.4 41.1093 16.3118 41.1093 16.2198V11.4962ZM48.0631 25.1877C47.4917 25.8121 46.689 26.1281 45.6777 26.1281H41.4494C41.3592 26.1281 41.2727 26.0916 41.2089 26.0265C41.1451 25.9615 41.1093 25.8732 41.1093 25.7812V20.0416C41.1093 19.9496 41.1451 19.8614 41.2089 19.7963C41.2727 19.7313 41.3592 19.6947 41.4494 19.6947H45.6746C46.686 19.6947 47.4887 20.0123 48.0601 20.6382C48.6117 21.2615 48.917 22.0711 48.917 22.9107C48.917 23.7502 48.6117 24.5599 48.0601 25.1831L48.0631 25.1877Z"
+                            fill="#2841e5"></path>
+                        <path
+                            d="M58.2142 14.7291H55.1621C54.9742 14.7291 54.822 14.8844 54.822 15.076V28.9464C54.822 29.1379 54.9742 29.2932 55.1621 29.2932H58.2142C58.4021 29.2932 58.5544 29.1379 58.5544 28.9464V15.076C58.5544 14.8844 58.4021 14.7291 58.2142 14.7291Z"
+                            fill="#2841e5"></path>
+                        <path
+                            d="M69.3736 14.729H67.481C67.4328 14.729 67.3867 14.7096 67.3527 14.6749C67.3187 14.6402 67.2996 14.5931 67.2996 14.544V10.3815C67.2996 10.2895 67.2637 10.2013 67.1999 10.1363C67.1361 10.0712 67.0496 10.0347 66.9594 10.0347H63.936C63.8913 10.0345 63.847 10.0433 63.8056 10.0607C63.7643 10.078 63.7267 10.1036 63.6951 10.1358C63.6634 10.1681 63.6384 10.2064 63.6214 10.2486C63.6043 10.2907 63.5957 10.3359 63.5959 10.3815V14.544C63.5959 14.5931 63.5768 14.6402 63.5428 14.6749C63.5087 14.7096 63.4626 14.729 63.4145 14.729H60.961C60.8708 14.729 60.7843 14.7656 60.7205 14.8306C60.6567 14.8957 60.6208 14.9839 60.6208 15.0759V17.6675C60.6208 17.7595 60.6567 17.8477 60.7205 17.9127C60.7843 17.9778 60.8708 18.0143 60.961 18.0143H63.4145C63.4626 18.0143 63.5087 18.0338 63.5428 18.0685C63.5768 18.1032 63.5959 18.1503 63.5959 18.1993V28.9463C63.5959 29.0383 63.6317 29.1265 63.6955 29.1916C63.7593 29.2566 63.8458 29.2932 63.936 29.2932H66.9594C67.0496 29.2932 67.1361 29.2566 67.1999 29.1916C67.2637 29.1265 67.2996 29.0383 67.2996 28.9463V18.1993C67.2994 18.175 67.3039 18.1508 67.313 18.1283C67.322 18.1058 67.3354 18.0853 67.3522 18.0681C67.3691 18.0508 67.3892 18.0372 67.4113 18.028C67.4334 18.0188 67.4571 18.0141 67.481 18.0143H70.4258C70.4819 18.0145 70.5372 18.0004 70.5867 17.9735C70.6362 17.9465 70.6784 17.9075 70.7095 17.8599C70.7407 17.8123 70.7598 17.7575 70.7651 17.7005C70.7705 17.6436 70.7619 17.5861 70.7402 17.5333L69.682 14.9418C69.6564 14.8796 69.6137 14.8264 69.5589 14.7886C69.5041 14.7508 69.4397 14.7301 69.3736 14.729Z"
+                            fill="#2841e5"></path>
+                        <path
+                            d="M100.94 28.749L96.353 21.978C96.3136 21.9198 96.2924 21.8507 96.2924 21.7799C96.2924 21.7092 96.3136 21.6401 96.353 21.5818L100.664 15.2733C100.7 15.2213 100.72 15.1604 100.724 15.0972C100.728 15.0341 100.715 14.971 100.686 14.915C100.657 14.8589 100.614 14.812 100.561 14.7792C100.508 14.7465 100.447 14.7291 100.385 14.7291H97.0908C97.0344 14.7288 96.9787 14.7427 96.9289 14.7696C96.879 14.7965 96.8365 14.8355 96.805 14.8833L94.1717 19.0258C94.1616 19.042 94.1476 19.0554 94.1311 19.0646C94.1146 19.0739 94.096 19.0788 94.0772 19.0788C94.0583 19.0788 94.0398 19.0739 94.0232 19.0646C94.0067 19.0554 93.9928 19.042 93.9827 19.0258L91.316 14.8848C91.2849 14.8371 91.2427 14.798 91.193 14.7711C91.1434 14.7442 91.088 14.7303 91.0318 14.7307H87.5035C87.4414 14.7308 87.3804 14.7482 87.3273 14.7812C87.2742 14.8141 87.2309 14.8613 87.2022 14.9176C87.1736 14.9738 87.1606 15.037 87.1646 15.1003C87.1687 15.1636 87.1897 15.2245 87.2254 15.2764L91.6093 21.642C91.6502 21.7005 91.6722 21.7705 91.6722 21.8424C91.6722 21.9142 91.6502 21.9843 91.6093 22.0428L86.923 28.746C86.8866 28.7978 86.8649 28.8589 86.8604 28.9225C86.8558 28.9861 86.8685 29.0498 86.8971 29.1065C86.9257 29.1632 86.969 29.2108 87.0224 29.244C87.0758 29.2773 87.1371 29.2948 87.1997 29.2948H90.5164C90.5722 29.2945 90.6272 29.2803 90.6764 29.2534C90.7257 29.2266 90.7678 29.1879 90.799 29.1406L93.7635 24.5912C93.7738 24.5753 93.7879 24.5622 93.8044 24.5532C93.8208 24.5442 93.8393 24.5395 93.858 24.5395C93.8767 24.5395 93.8951 24.5442 93.9116 24.5532C93.9281 24.5622 93.9421 24.5753 93.9525 24.5912L96.864 29.1375C96.8952 29.1855 96.9378 29.2247 96.9877 29.2516C97.0376 29.2786 97.0933 29.2923 97.1497 29.2917H100.66C100.722 29.2915 100.782 29.2741 100.835 29.2415C100.888 29.2088 100.931 29.162 100.96 29.1062C100.989 29.0504 101.002 28.9877 100.998 28.9248C100.995 28.8618 100.974 28.8011 100.94 28.749Z"
+                            fill="#2841e5"></path>
+                        <path
+                            d="M86.1339 14.7291H82.8505C82.7814 14.7293 82.7141 14.751 82.6573 14.7912C82.6006 14.8314 82.5573 14.8882 82.533 14.9542L79.1846 24.0685C79.1767 24.0909 79.1622 24.1101 79.1431 24.1238C79.124 24.1374 79.1013 24.1447 79.078 24.1447C79.0547 24.1447 79.032 24.1374 79.013 24.1238C78.9939 24.1101 78.9794 24.0909 78.9715 24.0685L75.7742 14.9542C75.7507 14.8868 75.7072 14.8284 75.6498 14.7873C75.5924 14.7461 75.5239 14.7242 75.4537 14.7245H72.1915C72.1355 14.7245 72.0805 14.7385 72.0311 14.7654C71.9818 14.7923 71.9397 14.8311 71.9086 14.8785C71.8775 14.9259 71.8584 14.9804 71.8528 15.0372C71.8473 15.094 71.8556 15.1512 71.877 15.2039L77.0274 27.8888C77.0614 27.9722 77.0779 28.0619 77.0758 28.1522C77.0738 28.2425 77.0531 28.3313 77.0153 28.4129L74.586 33.6546C74.5617 33.7071 74.5507 33.7649 74.554 33.8228C74.5573 33.8807 74.5748 33.9369 74.6049 33.9861C74.635 34.0353 74.6767 34.0761 74.7262 34.1046C74.7757 34.1332 74.8315 34.1486 74.8883 34.1495H78.013C78.079 34.1498 78.1437 34.1303 78.199 34.0936C78.2543 34.0569 78.2979 34.0045 78.3244 33.9429L86.4438 15.2163C86.4667 15.1636 86.4763 15.1059 86.4718 15.0484C86.4673 14.991 86.4488 14.9356 86.4181 14.8872C86.3873 14.8389 86.3452 14.7991 86.2956 14.7715C86.246 14.7439 86.1904 14.7293 86.1339 14.7291Z"
+                            fill="#2841e5"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_71_2473">
+                            <rect width="101" height="37" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg><!-- <a href="./index.html">Bityx</a> -->
+            </div>
+
+            <div class="header-links">
+                <a href="">Home</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#calculator">Calculate your profit</a>
+                <a href="#try-it">Try it</a>
+            </div>
+            <div class="try-now">
+                <a href="https://bityx.ai">Try now for free</a>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+
+        <section class="first-block">
+            <div class="information-part">
+                <h2>Trusted by three million global crypto investors</h2>
+                <p>Invest, trade & grow with <span style="color: rgb(16, 46, 242); font-weight: bold;">Bityx</span>
+                </p>
+            </div>
+
+            <img class="block-img-1"src="./images/first-block.png" alt="Bityx">
+        </section>
+
+        <section class="first-block">
+
+
+            <img class="block-img-2" src="./images/second-block.png" alt="Bityx">
+
+            <div class="information-part">
+                <h2>What is crypto arbitrage?</h2>
+                <p>
+                    Cryptocurrency arbitrage is <span style="color: rgb(16, 46, 242); font-weight: bold;">your</span>
+                    opportunity to earn money from the comfort of home. <br> <br>
+
+                    This is the opportunity to be where <span
+                        style="color: rgb(16, 46, 242); font-weight: bold;">you</span> want to be.<br> <br>
+
+                    This is an opportunity to earn as much as <span
+                        style="color: rgb(16, 46, 242); font-weight: bold;">you</span> want.<br> <br>
+                </p>
+            </div>
+        </section>
+        <div id="benefits" style="height: 100px;"></div>
+        <div class="title-box" >
+            <h2>A Full Suite of Crypto Products</h2>
+            <h4>For crypto traders to beat the markets, bull and bear.</h4>
+        </div>
+
+        <section class="second-block">
+
+            <div class="product-card">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 35H5" stroke="#0080FF" stroke-width="2" stroke-linecap="round">
+                        </path>
+                        <path d="M6.66699 26.6667V23.3333" stroke="#0080FF" stroke-width="2" stroke-linecap="round">
+                        </path>
+                        <path d="M20 20V15" stroke="#0080FF" stroke-width="2" stroke-linecap="round">
+                        </path>
+                        <path d="M13.333 26.6667V16.6667" stroke="#0080FF" stroke-width="2" stroke-linecap="round">
+                        </path>
+                        <path d="M26.667 21.6667V18.3333" stroke="#0080FF" stroke-width="2" stroke-linecap="round">
+                        </path>
+                        <path d="M33.333 25V8.33333" stroke="#0080FF" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="header-title">Futures Trading</div>
+                <ul class="list">
+                    <li class="list__item">Bitcoin and Ethereum futures</li>
+                    <li class="list__item">Up to 100x leverage</li>
+                    <li class="list__item">Deep liquidity</li>
+                    <li class="list__item">Tight spread</li>
+                    <li class="list__item">API access</li>
+                </ul>
+            </div>
+
+            <div class="product-card">
+                <div class="icon">
+                    <svg width="22" height="36" viewBox="0 0 22 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.9375 24.25C21.9375 26.1562 21.1802 27.9844 19.8323 29.3323C18.4844 30.6802 16.6562 31.4375 14.75 31.4375H11.9375V34.25C11.9375 34.4986 11.8387 34.7371 11.6629 34.9129C11.4871 35.0887 11.2486 35.1875 11 35.1875C10.7514 35.1875 10.5129 35.0887 10.3371 34.9129C10.1613 34.7371 10.0625 34.4986 10.0625 34.25V31.4375H7.25C5.34376 31.4375 3.51559 30.6802 2.16767 29.3323C0.819753 27.9844 0.0625 26.1562 0.0625 24.25C0.0625 24.0014 0.161272 23.7629 0.337087 23.5871C0.512903 23.4113 0.75136 23.3125 1 23.3125C1.24864 23.3125 1.4871 23.4113 1.66291 23.5871C1.83873 23.7629 1.9375 24.0014 1.9375 24.25C1.94162 25.6577 2.50265 27.0066 3.49805 28.0019C4.49344 28.9973 5.84231 29.5584 7.25 29.5625H14.75C16.159 29.5625 17.5102 29.0028 18.5065 28.0065C19.5028 27.0102 20.0625 25.659 20.0625 24.25C20.0625 22.841 19.5028 21.4898 18.5065 20.4935C17.5102 19.4972 16.159 18.9375 14.75 18.9375H7.875C5.96876 18.9375 4.14059 18.1802 2.79267 16.8323C1.44475 15.4844 0.6875 13.6562 0.6875 11.75C0.6875 9.84376 1.44475 8.01559 2.79267 6.66767C4.14059 5.31975 5.96876 4.5625 7.875 4.5625H10.0625V1.75C10.0625 1.50136 10.1613 1.2629 10.3371 1.08709C10.5129 0.911272 10.7514 0.8125 11 0.8125C11.2486 0.8125 11.4871 0.911272 11.6629 1.08709C11.8387 1.2629 11.9375 1.50136 11.9375 1.75V4.5625H13.5C15.4062 4.5625 17.2344 5.31975 18.5823 6.66767C19.9302 8.01559 20.6875 9.84376 20.6875 11.75C20.6875 11.9986 20.5887 12.2371 20.4129 12.4129C20.2371 12.5887 19.9986 12.6875 19.75 12.6875C19.5014 12.6875 19.2629 12.5887 19.0871 12.4129C18.9113 12.2371 18.8125 11.9986 18.8125 11.75C18.8084 10.3423 18.2473 8.99344 17.2519 7.99805C16.2566 7.00265 14.9077 6.44162 13.5 6.4375H7.875C6.46604 6.4375 5.11478 6.99721 4.11849 7.9935C3.12221 8.98978 2.5625 10.341 2.5625 11.75C2.5625 13.159 3.12221 14.5102 4.11849 15.5065C5.11478 16.5028 6.46604 17.0625 7.875 17.0625H14.75C16.6562 17.0625 18.4844 17.8198 19.8323 19.1677C21.1802 20.5156 21.9375 22.3438 21.9375 24.25Z"
+                            fill="#0080FF"></path>
+                    </svg>
+                </div>
+                <div class="header-title">Cash Gateways</div>
+                <div class="list">
+                    <li class="list__item">Cash deposit and withdrawal</li>
+                    <li class="list__item">Support 20+ cash currencies</li>
+                    <li class="list__item">P2P with escrow</li>
+                    <li class="list__item">Quick settlement</li>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.6667 28.3333H15V32.9218C15 33.0887 14.8077 33.1822 14.6764 33.0791L3.33333 24.1667L14.6764 15.2542C14.8077 15.1511 15 15.2446 15 15.4115V20H25"
+                            stroke="#0080FF" stroke-width="2"></path>
+                        <path
+                            d="M18.3333 11.6667H25V7.07816C25 6.91127 25.1923 6.81779 25.3236 6.9209L36.6667 15.8333L25.3236 24.7458C25.1923 24.8489 25 24.7554 25 24.5885V20H15"
+                            stroke="#0080FF" stroke-width="2"></path>
+                    </svg>
+                </div>
+                <div class="header-title">Spot Trading</div>
+                <div class="list">
+                    <li class="list__item">50+ crypto-to-crypto pairs</li>
+                    <li class="list__item">Easy deposit and withdrawal</li>
+                    <li class="list__item">Market surveillance</li>
+                    <li class="list__item">LSEG Technology matching engine</li>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.773 6.03946L31.7577 8.96871C32.1954 9.08545 32.5 9.48189 32.5 9.93494V22.6222C32.5 24.6284 31.4974 26.5017 29.8282 27.6145L20.5547 33.7969C20.2188 34.0208 19.7812 34.0208 19.4453 33.7969L10.1718 27.6145C8.50261 26.5017 7.5 24.6284 7.5 22.6222V9.93495C7.5 9.48189 7.80458 9.08544 8.24234 8.96871L19.227 6.03946C19.7335 5.9044 20.2665 5.9044 20.773 6.03946Z"
+                            stroke="#0080FF" stroke-width="2" stroke-linecap="round"></path>
+                        <path
+                            d="M15.8333 19.1667L18.9899 22.3232C19.0875 22.4209 19.2458 22.4209 19.3434 22.3232L25 16.6667"
+                            stroke="#0080FF" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="header-title">Savings</div>
+                <ul class="list">
+                    <div class="list">
+                        <li class="list__item">Competitive interest rates</li>
+                        <li class="list__item">No lock-up</li>
+                        <li class="list__item">No fees</li>
+                        <li class="list__item">Accrue by the minute</li>
+                        <li class="list__item">Personal manager</li>
+                    </div>
+                </ul>
+            </div>
+
+        </section>
+        <div id="calculator" style="height: 100px;"></div>
+        <div class="title-box" >
+            <h2>Calculate your profit</h2>
+            <h4>For crypto traders to beat the markets, bull and bear.</h4>
+        </div>
+        <div class="rate-box">
+            <div class="BTCRate">
+
+                <span id="binBTCRate">0</span><span> - Price BTC in Binance</span>
+            </div>
+            <div class="BTCRate">
+
+                <span id="coinBTCRate">0</span><span> - Price BTC in Bityx</span>
+            </div>
+
+        </div>
+        <section class="calculate-block">
+
+            <input type="number" name="Calculate" id="enteredAmount" value="" placeholder='Enter amount in $' />
+
+            <button type="submit" class="btn-calculate" onclick="calculate()">Calculate Profit</button>
+
+            <div class="result"><span>Your profit will be: </span><span id="profit">______</span></div>
+
+        </section>
+
+        <script>
+            function calculateProfit() {
+                let amount = document.getElementById('amount').value;
+                let profit = document.getElementById('profit');
+
+                let percent = 18077.13 / 16731.66
+
+                profit.innerText = Math.ceil(amount * percent) - amount + '$';
+
+                // 	18,077.13 CoinWan
+                // 	16,731.66 Binance
+            }
+
+        </script>
+
+
+
+
+    </div>
+
+    <section class="subscribe-section" id="try-it">
+        <div class="subscribe-wrapper">
+            <h2 class="subscribe-h2">Join traders around the world and reshape your finances</h2>
+            <form action="https://bityx.ai" class="subscribe-form">
+                <!-- <input type="email" class="form-input" placeholder="Enter email address" required> -->
+                <button  type="submit" class="submit-form">Get Started</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>* Crypto assets are unregulated and can be highly risky. There may be no regulatory recourse for
+            any loss from such transactions. This advertisement does not constitute investment advice, financial
+            advice, trading advice, or any other sort of advice and you should not treat it as such. You are
+            advised to obtain independent financial advice and conduct any necessary research or due diligence
+            before making any investment decisions or accessing or using Coinwan.</div>
+    </footer>
+
+    <div class="card cookie-alert">
+        <div class="card-body">
+            <h3 class="card-title">&#x1F36A; Do you like cookies?</h3>
+            <p class="card-text">We use cookies to ensure you get the best experience on our website.</p>
+            <div class="btn-toolbar">
+                <a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Learn more</a>
+                <div class="btn btn-primary accept-cookies">Accept</div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .cookie-alert {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 320px;
+            margin: 0 !important;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 500ms ease-out;
+            background-color: #fff;
+            color: #000;
+            padding: 1em;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            margin-bottom: 0.75rem;
+        }
+
+        .card-body p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .btn-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .btn-toolbar a {
+            margin-left: 1em;
+            text-decoration: none;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            cursor: pointer;
+        }
+
+        .accept-cookies {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .cookie-alert.show {
+            opacity: 1;
+            transform: translateY(0%);
+            transition-delay: 1000ms;
+        }
+    </style>
+
+    <script>
+        (function () {
+            "use strict";
+
+            var cookieAlert = document.querySelector(".cookie-alert");
+            var acceptCookies = document.querySelector(".accept-cookies");
+
+            if (!localStorage.getItem("accepted")) cookieAlert.classList.add("show");
+
+            // if (!getCookie("acceptCookies")) {
+            //     cookieAlert.classList.add("show");
+            // }
+
+            acceptCookies.addEventListener("click", function () {
+                setCookie("acceptCookies", true, 60);
+                localStorage.setItem('accepted', true);
+                cookieAlert.classList.remove("show");
+            });
+        })();
+
+        // Cookie functions stolen from w3schools
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+
+</body>
+
+</html>
